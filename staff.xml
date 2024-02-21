@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<staffs>
+    <staff>
+        <id>1</id>
+        <name>Aarav Patel</name>
+        <work>Hotel Receptionist</work>
+    </staff>
+    <staff>
+        <id>2</id>
+        <name>Aditi Sharma</name>
+        <work>Hotel Manager</work>
+    </staff>
+    <staff>
+        <id>3</id>
+        <name>Arjun Gupta</name>
+        <work>Event Manager</work>
+    </staff>
+    <staff>
+        <id>4</id>
+        <name>Ananya Singh</name>
+        <work>Chef</work>
+    </staff>
+    <staff>
+        <id>5</id>
+        <name>Aishwarya Kumar</name>
+        <work>Housekeeping</work>
+    </staff>
+    <staff>
+        <id>6</id>
+        <name>Amit Joshi</name>
+        <work>Chef</work>
+    </staff>
+    <staff>
+        <id>7</id>
+        <name>Anjali Shah</name>
+        <work>Food and Beverage Manager</work>
+    </staff>
+    <staff>
+        <id>8</id>
+        <name>Aryan Singh</name>
+        <work>Housekeeper</work>
+    </staff>
+    <staff>
+        <id>9</id>
+        <name>Ayesha Khan</name>
+        <work>Concierge</work>
+    </staff>
+    <staff>
+        <id>10</id>
+        <name>Akhil Sharma</name>
+        <work>Financial Analyst</work>
+    </staff>
+    <staff>
+        <id>11</id>
+        <name>Ananya Verma</name>
+        <work>Room Attendant</work>
+    </staff>
+    <staff>
+        <id>12</id>
+        <name>Aditya Gupta</name>
+        <work>General Manager</work>
+    </staff>
+    <staff>
+        <id>13</id>
+        <name>Deepak Reddy</name>
+        <work>Kitchen Manager</work>
+    </staff>
+    <staff>
+        <id>14</id>
+        <name>Kavita Mishra</name>
+        <work>Guest Services</work>
+    </staff>
+    <staff>
+        <id>15</id>
+        <name>Neha Yadav</name>
+        <work>Business Analyst</work>
+    </staff>
+</staffs>

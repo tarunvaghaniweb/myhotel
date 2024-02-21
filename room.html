@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Room Information</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1 class="mt-5">Room Information</h1>
+    <button id="toggleButton" class="btn btn-primary mt-4">JSON Room Information</button>
+    <div id="roomInfo" class="table-responsive" style="display: none;">
+      <table class="table mt-4">
+        <thead>
+          <tr>
+            <th scope="col">Room ID</th>
+            <th scope="col">Room Type</th>
+            <th scope="col">Description</th>
+            <th scope="col">Charges</th>
+          </tr>
+        </thead>
+        <tbody id="roomInfoBody">
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+
+    fetch('room.json')
+      .then(response => response.json())
+      .then(data => {
+        const roomInfoBody = document.getElementById('roomInfoBody');
+        data.forEach(room => {
+          const roomRow = document.createElement('tr');
+          roomRow.innerHTML = `
+            <th scope="row">${room.roomId}</th>
+            <td>${room.roomTypeName}</td>
+            <td>${room.roomDescription}</td>
+            <td>${room.roomCharges}</td>
+          `;
+          roomInfoBody.appendChild(roomRow);
+        });
+      })
+      .catch(error => console.error('Error fetching room data:', error));
+    document.getElementById('toggleButton').addEventListener('click', function() {
+      const roomInfo = document.getElementById('roomInfo');
+      if (roomInfo.style.display === 'none') {
+        roomInfo.style.display = 'block';
+      } else {
+        roomInfo.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>

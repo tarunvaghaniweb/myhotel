@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Information</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .table-wrapper {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="table-wrapper">
+            <h2>Staff Information</h2>
+            <button id="showRecordsBtn" class="btn btn-primary">XML Show Records</button>
+            <div id="tableContainer" style="display: none;">
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Staff ID</th>
+                                <th>Staff Name</th>
+                                <th>Staff Work</th>
+                            </tr>
+                        </thead>
+                        <tbody id="staffTableBody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let recordsVisible = false;
+
+        document.getElementById('showRecordsBtn').addEventListener('click', function() {
+            if (recordsVisible) {
+                document.getElementById('tableContainer').style.display = 'none';
+                recordsVisible = false;
+            } else {
+                fetch('staff.xml')
+                    .then(response => response.text())
+                    .then(data => {
+                        const parser = new DOMParser();
+                        const xmlDoc = parser.parseFromString(data, 'application/xml');
+                        const staffs = xmlDoc.getElementsByTagName('staff');
+
+                        const tableBody = document.getElementById('staffTableBody');
+                        tableBody.innerHTML = ''; 
+
+                        for (let i = 0; i < staffs.length; i++) {
+                            const id = staffs[i].getElementsByTagName('id')[0].textContent;
+                            const name = staffs[i].getElementsByTagName('name')[0].textContent;
+                            const work = staffs[i].getElementsByTagName('work')[0].textContent;
+
+                            const row = `
+                                <tr>
+                                    <td>${id}</td>
+                                    <td>${name}</td>
+                                    <td>${work}</td>
+                                </tr>
+                            `;
+                            tableBody.innerHTML += row;
+                        }
+
+                        document.getElementById('tableContainer').style.display = 'block'; 
+                        recordsVisible = true;
+                    })
+                    .catch(error => console.error('Error fetching XML file:', error));
+            }
+        });
+    </script>
+</body>
+</html>

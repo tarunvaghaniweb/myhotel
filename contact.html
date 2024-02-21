@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <!-- bootstrap file link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <!-- bootstrap icon cdn link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alkatra&family=Fira+Sans&family=Kanit:wght@200&family=Montserrat+Alternates&family=Montserrat:wght@500;700&family=Open+Sans:wght@300;400;700;800&family=Poppins:wght@200&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+<nav class="navbar navbar-expand-lg bg-body-tertiary py-0" id='nav'>
+    <div class="container-fluid  px-0">
+        <img src="img/Link.png" class='icoon'>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-5 mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html"> <strong>HOME</strong> </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html"> <strong> ABOUT</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="room.html"> <strong> ROOMS</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="./index.html" aria-disabled="true"> <strong> SERVICE</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="staff.html" aria-disabled="true"> <strong> STAFFS</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html"> <strong> GALLERY</strong></a>
+                </li>
+
+            </ul>
+            <button class="btn rounded-2 btn-secondary " onclick="location.href='login.html'"> LOGIN</button>
+            <button class="btn btn-success ms-4" onclick="location.href='signup.html'">SIGN-UP</button>
+
+        </div>
+    </div>
+</nav>
+
+<body style="background-color: #3d5877;">
+    <div class="container-fluid">
+        <div class="row" style="display: flex;">
+            <div class="col-lg-6 mt-5">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.905157568263!2d72.84992747480159!3d21.23560918064284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f27ee8159e3%3A0xf6defb4d03e81080!2sSutex%20Bank%20College%20of%20Computer%20Applications%20%26%20Science!5e0!3m2!1sen!2sin!4v1694412364513!5m2!1sen!2sin"
+                    width="100%" height="600px" style="border:none; border-radius: 10px;" allowfullscreen=""
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-lg-6 mt-5">
+                <form action="index.html" id="form">
+                    <h1 style="color: aliceblue; text-align: center;">Contact Us</h1>
+                    <div class="col mt-5">
+                        <input type="text" id="username" style="width: 100%" name="name" class="form-control"
+                            placeholder="Your Name">
+                    </div>
+                    <div class="col mt-3">
+                        <input type="email" id="email" style="width: 100%" class="form-control" name="email"
+                            placeholder="Your Email">
+                    </div>
+                    <div class="col mt-3">
+                        <input type="text" id="subject" class="form-control" name="subject" placeholder="Subject">
+                    </div>
+                    <div class="col mt-3">
+                        <textarea class="form-control" id="message" name="message" rows="6"
+                            placeholder="Message"></textarea>
+                    </div>
+
+                    <div class="col-md-12 text-center mt-5">
+                        <button type="submit"
+                            style="background-color:#ffff; color:#595C5F; height: 50px; width: 200px; border: none; border-radius: 10px;">Send
+                            Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="container-fluid" id="footer">
+                <div class="row">
+                    <div class="col-md-3 mt-5 footer-section">
+                        <div class="container" style="background-color: #FEA116;color: #fff; text-align: center;">
+                            <h1>MY HOTEL </h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nihil
+                                eius reprehenderit sit nesciunt est maiores </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-5 footer-section">
+                        <h5 style="color: #FEA116;">CONTECT</h5>
+                        <div class="d-flex">
+                            <i class="fi fi-ss-marker" style="color: #f4f5f5;height: 20px;"></i>
+                            <h6 class="ms-2">123 street,new york,usa</h6>
+                        </div>
+                        <div class="d-flex mt-2">
+                            <i class="fi fi-sr-phone-call" style="color: #fff;height: 20px;"></i>
+                            <h6 class="ms-2">+ 012 345 6789</h6>
+                        </div>
+                        <div class="d-flex mt-2">
+                            <i class="fi fi-sr-envelope"></i>
+                            <h6 class="ms-2">myhotel.com</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-5 footer-section">
+                        <h5 style="color: #FEA116;">COMPANY</h5>
+                        <div class="about mt-3 d-flex align-items-center gap-2">
+
+                            <i class="fi fi-rr-arrow-small-right mt-2" style="color: #fafcff;"></i> <a
+                                style="text-decoration: none; color: #fff;" href="./index.html"
+                                class="my-0 text-uppercase">about-us</a>
+                        </div>
+                        <div class="contect-us mt-3 d-flex align-items-center gap-2">
+                            <i class="fi fi-rr-arrow-small-right mt-2" style="color: #fafcff;"></i> <a
+                                style="text-decoration: none; color: #fff;" href="staff.html"
+                                class="my-0 text-uppercase">Staff</a>
+                        </div>
+                        <div class="privecy mt-3 d-flex align-items-center gap-2">
+                            <i class="fi fi-rr-arrow-small-right mt-2" style="color: #fafcff;"></i> <a
+                                style="text-decoration: none; color: #fff;" href="login.html"
+                                class="my-0 text-uppercase">Login</a>
+                        </div>
+                        <div class="terms mt-3 d-flex align-items-center gap-2">
+                            <i class="fi fi-rr-arrow-small-right mt-2" style="color: #fafcff;"></i> <a
+                                style="text-decoration: none; color: #fff;" href="signup.html"
+                                class="my-0 text-uppercase">Sign up</a>
+                        </div>
+                        <div class="support mt-3 d-flex align-items-center gap-2">
+                            <i class="fi fi-rr-arrow-small-right mt-2" style="color: #fafcff;"></i> <a
+                                style="text-decoration: none; color: #fff;" href="gallery.html"
+                                class="my-0 text-uppercase">Gallery</a>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3 mt-5 footer-section">
+                        <h5 style="color: #FEA116;">SERVICES</h5>
+                        <div class="services-item">
+                            <div class="food d-flex align-items-center gap-2 mt-3">
+
+                                <i class="fi fi-rr-arrow-small-right mt-2" style="color: #fafcff;"></i>
+                                <h6 class="my-0">food &#38; restaurent</h6>
+                            </div>
+                            <div class="spa d-flex align-items-center gap-2 mt-3">
+
+                                <i class="fi fi-rr-arrow-small-right mt-2" style="color: #fafcff;"></i>
+                                <h6 class="my-0">spa &#38; fitness</h6>
+                            </div>
+                            <div class="gaming d-flex align-items-center gap-2 mt-3">
+
+                                <i class="fi fi-rr-arrow-small-right mt-2" style="color: #fafcff;"></i>
+                                <h6 class="my-0">sport &#38; gaming</h6>
+                            </div>
+                            <div class="event d-flex align-items-center gap-2 mt-3">
+                                <i class="fi fi-rr-arrow-small-right mt-2" style="color: #fafcff;"></i>
+                                <h6 class="my-0">event &#38; party</h6>
+                            </div>
+                            <div class="yoga d-flex align-items-center gap-2 mt-3">
+                                <i class="fi fi-rr-arrow-small-right mt-2" style="color: #fafcff;"></i>
+                                <h6 class="my-0">gym &#38; yoga</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="copy-right-text" style="text-align: center;">
+                            <h6>&#169; <span class="text-decoration-underline">hotel blue whele</span>, all right
+                                reserved .
+                                designed by
+                                <span class="text-decoration-underline">tarun vaghani </span>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+            const form = document.getElementById("form")
+            form.addEventListener("submit", register)
+            function register(e) {
+
+                const username = document.getElementById("username").value
+                const email = document.getElementById("email").value
+                const subject = document.getElementById("subject").value
+                const message = document.getElementById("message").value
+
+                if (!username || !email || !subject || !message) {
+                    e.preventDefault()
+                    alert("please fill fields")
+                    return
+                }
+            }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

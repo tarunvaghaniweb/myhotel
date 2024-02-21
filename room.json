@@ -1,0 +1,63 @@
+[
+    {
+      "roomId": 1,
+      "roomTypeName": "Standard Single Room",
+      "roomDescription": "A cozy single room with a comfortable bed and basic amenities.",
+      "roomCharges": "$50 per night"
+    },
+    {
+      "roomId": 2,
+      "roomTypeName": "Deluxe Double Room",
+      "roomDescription": "A spacious double room with a king-sized bed and luxurious amenities.",
+      "roomCharges": "$100 per night"
+    },
+    {
+      "roomId": 3,
+      "roomTypeName": "Executive Suite",
+      "roomDescription": "An elegant suite with a separate living area and stunning views.",
+      "roomCharges": "$200 per night"
+    },
+    {
+      "roomId": 4,
+      "roomTypeName": "Family Suite",
+      "roomDescription": "A large suite suitable for families with multiple bedrooms and a living room.",
+      "roomCharges": "$250 per night"
+    },
+    {
+      "roomId": 5,
+      "roomTypeName": "Ocean View Room",
+      "roomDescription": "A room with a breathtaking view of the ocean and beachfront access.",
+      "roomCharges": "$150 per night"
+    },
+    {
+      "roomId": 6,
+      "roomTypeName": "Penthouse Suite",
+      "roomDescription": "A luxurious penthouse with panoramic city views and exclusive amenities.",
+      "roomCharges": "$500 per night"
+    },
+    {
+      "roomId": 7,
+      "roomTypeName": "Budget Single Room",
+      "roomDescription": "A simple single room suitable for budget-conscious travelers.",
+      "roomCharges": "$30 per night"
+    },
+    {
+      "roomId": 8,
+      "roomTypeName": "Business Class Room",
+      "roomDescription": "A comfortable room designed for business travelers with workspace and high-speed internet.",
+      "roomCharges": "$120 per night"
+    },
+    {
+      "roomId": 9,
+      "roomTypeName": "Luxury Villa",
+      "roomDescription": "A private villa with a pool, garden, and personalized butler service.",
+      "roomCharges": "$1000 per night"
+    },
+    {
+      "roomId": 10,
+      "roomTypeName": "Mountain View Chalet",
+      "roomDescription": "A cozy chalet with stunning mountain views and fireplace.",
+      "roomCharges": "$180 per night"
+    }
+  ]
+  

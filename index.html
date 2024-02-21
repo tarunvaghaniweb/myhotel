@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hotel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <!-- bootstrap file link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <!-- bootstrap icon cdn link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alkatra&family=Fira+Sans&family=Kanit:wght@200&family=Montserrat+Alternates&family=Montserrat:wght@500;700&family=Open+Sans:wght@300;400;700;800&family=Poppins:wght@200&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-0" id='nav'>
+        <div class="container-fluid  px-0">
+            <img src="img/Link.png" class='icoon'>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-5 mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home-page"> <strong>HOME</strong> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about"> <strong> ABOUT</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="room.html"> <strong> ROOMS</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link "  href="#Services" aria-disabled="true"> <strong> SERVICE</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link "  href="staff.html" aria-disabled="true"> <strong> STAFFS</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html"> <strong> GALLERY</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html"> <strong> CONTACT US</strong></a>
+                    </li>
+                    
+                </ul>
+                <button class="btn rounded-2 btn-secondary "  onclick="location.href='login.html'"> LOGIN</button>
+                <button class="btn btn-success ms-4" onclick="location.href='signup.html'">SIGN-UP</button>
+
+            </div>
+        </div>
+    </nav>
+    <div class='home-page' id="home-page">
+        <div class='container-fluid d-grid align-items-center' id='hero'>
+            <div class="row ">
+                <div class='d-flex'>
+                    <h4>LUXURY LIVING</h4>
+                    <hr style="width: 60px;border:0.5px solid #FEA116;background-color: #FEA116;opacity: 10;">
+
+                </div>
+                <h1 class='head1'>Discover A Brand Luxurious <br />Hotel</h1>
+                <button class='text-uppercase text-light fw-bolder' onclick="location.href='#roomsss'"
+                    style="height: 48px;width: 170px;background-color: #FEA116;">our rooms</button>
+                <button class='text-uppercase text-black fw-bolder ms-3' id='book' onclick="alert('please log in first!!!')"
+                    style="height: 48px;width: 170px;background-color: #fff;">book a room</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="check-in-out">
+        <div class="container-fluid d-flex justify-content-center align-items-center bg-light gap-2">
+            <input class="border border-dark" type="text" name="check-in" id="check-in" placeholder="check in">
+            <input class="border border-dark" type="text" name="check-out" id="check-out" placeholder="check-out">
+            <input class="border border-dark" type="number" name="adult" id="adult" placeholder="adult">
+            <input class="border border-dark" type="number" name="child" id="child" placeholder="child">
+            <div class="btn-submite">
+                <button class="submit text-light" onclick="alert('thank you for booking!')">submit</button>
+            </div>
+        </div>
+    </div>
+ 
+    <div class='mt-3' style="text-align: center;" id="about">
+        <h1 style="font-size: 16px;color: #FEA116;">ABOUT US</h1>
+        <h1 style="font-size: 40px;">Branch</h1>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card">
+                <img src="./img/branch1.png" class="card-img-top" alt="...">
+                <div class="card-body" id="card-body">
+                    <h1>Surat</h1>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="./img/branch1.png" class="card-img-top" alt="...">
+                <div class="card-body" id="card-body">
+                    <h1>Vadodara</h1>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="./img/branch2.png" class="card-img-top" alt="...">
+                <div class="card-body" id="card-body">
+                    <h1>Ahmedabad</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="room">
+        <div class="row">
+
+            <div class="col-md-3">
+                <div class="card " id="card">
+                    <img src="./img/apartment.png" class="card-img-top mx-auto mt-3" id="img" alt="Card 1" />
+                    <div class="card-body" id="card-text">
+                        <h1 class="card-title">1234</h1>
+                        <p class="card-text">Appartment</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card  " id="card">
+                    <img src="./img/rooms.png" class="card-img-top mx-auto mt-3" id="img" alt="Card 2" />
+                    <div class="card-body" id="card-text">
+                        <h1 class="card-title">1234</h1>
+                        <p class="card-text">Rooms</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card  " id="card">
+                    <img src="./img/staff.png" class="card-img-top mx-auto mt-3" id="img" alt="Card 3" />
+                    <div class="card-body" id="card-text">
+                        <h1 class="card-title">1234</h1>
+                        <p class="card-text">Staff</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card  " id="card">
+                    <img src="./img/client.png" class="card-img-top mx-auto mt-3" id="img" alt="Card 4" />
+                    <div class="card-body" id="card-text">
+                        <h1 class="card-title">1234</h1>
+                        <p class="card-text">Client</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-5" id="roomsss">
+        <div class='mt-3' style="text-align: center;">
+            <h1 style="font-size: 16px;color: #FEA116;">Our Rooms</h1>
+            <h1 style="font-size: 40px;">Explore Our <span style="color:#FEA116;"> Rooms </span> </h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card" id="room2">
+                    <div class="row no-gutters">
+                        <div class="col-md-6">
+                            <img src="./img/room1.png" style="height: 100%;" class="card-img rounded-0"
+                                alt="Sample Image" />
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <div class="first">
+                                    <button id="btn-book">$50/Night</button>
+                                    <div class="fafa-star">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                    </div>
+                                </div>
+                                <div class="second mt-3">
+                                    <h4 class="junior mt-3">Suite</h4>
+                                </div>
+                                <div class="third mt-4">
+                                    <img src="./img/bed.png" style="height: 19px;width: 19px;" class="" />
+                                    <p class="r-text">1 Bed</p>
+                                    <img src="./img/bath.png" style="height: 19px;width: 19px;" class="" />
+                                    <p class="r-text">1 Bath</p>
+                                    <img src="./img/wifi.png" style="height: 19px;width: 19px;" class="" />
+                                    <p class="r-text">Wifi</p>
+                                </div>
+                                <div class="fourth mt-4">
+                                    <p style="font-size: 20px;">Erat ipsum justo amet duo et elitr dolor, est
+                                        duo duo eos lorem sed diam stet diam sed
+                                        stet.</p>
+                                </div>
+                                <div class="fifth mt-5">
+                                    <button id="view">VIEW DETAIL</button>
+                                    <button id="book">BOOK NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+                <div class="card" id="room2">
+                    <div class="row no-gutters">
+
+                        <div class="col-md-6">
+                            <img src="./img/room2.png" style="height: 100%;" class="card-img rounded-0"
+                                alt="Sample Image" />
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <div class="first">
+                                    <button id="btn-book">$100/Night</button>
+                                    <div class="fafa-star">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                    </div>
+                                </div>
+                                <div class="second mt-3">
+                                    <h4 class="junior mt-3">Junior Suite</h4>
+                                </div>
+                                <div class="third mt-4">
+                                    <img src="./img/bed.png" style="height: 19px;width: 19px;" class="" />
+                                    <p class="r-text">2 Bed</p>
+                                    <img src="./img/bath.png" style="height: 19px;width: 19px;" class="" />
+                                    <p class="r-text">2 Bath</p>
+                                    <img src="./img/wifi.png" style="height: 19px;width: 19px;" class="" />
+                                    <p class="r-text">Wifi</p>
+                                </div>
+                                <div class="fourth mt-4">
+                                    <p style="font-size: 20px;">Erat ipsum justo amet duo et elitr dolor, est
+                                        duo duo eos lorem sed diam stet diam sed
+                                        stet.</p>
+                                </div>
+                                <div class="fifth mt-5">
+                                    <button id="view">VIEW DETAIL</button>
+                                    <button id="book">BOOK NOW</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-5">
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="card" id="room2">
+                    <div class="row no-gutters">
+
+                        <div class="col-md-6">
+                            <img src="./img/room3.png" style="height: 100%;" class="card-img rounded-0"
+                                alt="Sample Image" />
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <div class="first">
+                                    <button id="btn-book">$150/Night</button>
+                                    <div class="fafa-star">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                    </div>
+                                </div>
+                                <div class="second mt-3">
+                                    <h4 class="junior mt-3">Businessmen Suite</h4>
+                                </div>
+                                <div class="third mt-4">
+                                    <img src="./img/bed.png" style="height: 19px;width: 19px;" class="" />
+                                    <p class="r-text">3 Bed</p>
+                                    <img src="./img/bath.png" style="height: 19px;width: 19px;" class="" />
+                                    <p class="r-text">3 Bath</p>
+                                    <img src="./img/wifi.png" style="height: 19px;width: 19px;" class="" />
+                                    <p class="r-text">Wifi</p>
+                                </div>
+                                <div class="fourth mt-4">
+                                    <p style="font-size: 20px;">Erat ipsum justo amet duo et elitr dolor, est
+                                        duo duo eos lorem sed diam stet diam sed
+                                        stet.</p>
+                                </div>
+                                <div class="fifth mt-5">
+                                    <button id="view">VIEW DETAIL</button>
+                                    <button id="book">BOOK NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+                <div class="card" id="room2">
+                    <div class="row no-gutters">
+
+                        <div class="col-md-6">
+                            <img src="./img/room1.png" style="height: 100%;" class="card-img rounded-0"
+                                alt="Sample Image" />
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <div class="first">
+                                    <button id="btn-book">$300/Night</button>
+                                    <div class="fafa-star">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                    </div>
+                                </div>
+                                <div class="second mt-3">
+                                    <h4 class="junior mt-3">Penthouse Suite</h4>
+                                </div>
+                                <div class="third mt-4">
+                                    <img src="./img/bed.png" style="height: 19px;width: 19px;" class="" />
+                                    <p class="r-text">4 Bed</p>
+                                    <img src="./img/bath.png" style="height: 19px;width: 19px;" class="" />
+                                    <p class="r-text">4 Bath</p>
+                                    <img src="./img/wifi.png" style="height: 19px;width: 19px;" class="" />
+                                    <p class="r-text">Wifi</p>
+                                </div>
+                                <div class="fourth mt-4">
+                                    <p style="font-size: 20px;">Erat ipsum justo amet duo et elitr dolor, est
+                                        duo duo eos lorem sed diam stet diam sed
+                                        stet.</p>
+                                </div>
+                                <div class="fifth mt-5">
+                                    <button id="view">VIEW DETAIL</button>
+                                    <button id="book">BOOK NOW</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid px-0" id="brand-text">
+        <div class="row">
+            <div class="col-md-6" style="color: #fff;display: grid;align-items: center;">
+                <div>
+                    <div class='d-flex'>
+                        <h4>LUXURY LIVING</h4>
+                        <hr style="width: 60px;border:0.5px solid #FEA116 ;opacity: 10;background-color: #FEA116;">
+
+                    </div>
+                    <h1 class='head1'>Discover A Brand <br /> Luxurious Hotel</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab officiis minima error, soluta
+                        quia, eaque eum distinctio laboriosam, ad cupiditate voluptatem debitis veniam fuga iste
+                        mollitia est ipsa accusantium.</p>
+                    <div class="button" style="display: flex;">
+                        <button class='text-uppercase text-light fw-bolder'
+                            style="height: 48px;width: 170px;background-color: #FEA116;" onclick="location.href='#roomsss'">our rooms</button>
+                        <button class='text-uppercase text-black fw-bolder ms-3' id='book'
+                            style="height: 48px;width: 170px;background-color: #fff;" onclick="alert('thank you for booking')">book a room</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img style="border: none;width: 100%;" src="./img/rooms.jpg" />
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5" id="Services">
+        <div class='mt-3' style="text-align: center;">
+            <h1 style="font-size: 16px;color: #FEA116;">Our Services</h1>
+            <h1 style="font-size: 40px;">Explore Our <span style="color:#FEA116;"> SERVICES </span> </h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-4 mb-4">
+                <div class="card" style="border-bottom: 5px solid#FEA116;">
+                    <div class="card-body">
+                        <img src="./img/apart.png" alt="">
+                        <h5 class="card-title">Rooms & Appartment</h5>
+                        <p class="card-text">Erat ipsum justo amet duo et elitr dolor, est duo
+                            duo eos lorem sed diam stet diam sed stet
+                            lorem.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 mb-4">
+                <div class="card" style="border-bottom: 5px solid#FEA116;">
+                    <div class="card-body">
+                        <img src="./img/food.png" alt="">
+                        <h5 class="card-title">Food & Restaurant</h5>
+                        <p class="card-text">Erat ipsum justo amet duo et elitr dolor, est duo
+                            duo eos lorem sed diam stet diam sed stet
+                            lorem.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 mb-4">
+                <div class="card" style="border-bottom: 5px solid#FEA116;">
+                    <div class="card-body">
+                        <img src="./img/spa.png" alt="">
+                        <h5 class="card-title">Spa & Fitness</h5>
+                        <p class="card-text">Erat ipsum justo amet duo et elitr dolor, est duo
+                            duo eos lorem sed diam stet diam sed stet
+                            lorem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 mb-4">
+                <div class="card" style="border-bottom: 5px solid#FEA116;">
+                    <div class="card-body">
+                        <img src="./img/swiming.png" alt="">
+                        <h5 class="card-title">Sports & Gaming</h5>
+                        <p class="card-text">Erat ipsum justo amet duo et elitr dolor, est duo
+                            duo eos lorem sed diam stet diam sed stet
+                            lorem.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 mb-4">
+                <div class="card" style="border-bottom: 5px solid#FEA116;">
+                    <div class="card-body">
+                        <img src="./img/party.png" alt="">
+                        <h5 class="card-title">Event & Party</h5>
+                        <p class="card-text">Erat ipsum justo amet duo et elitr dolor, est duo
+                            duo eos lorem sed diam stet diam sed stet
+                            lorem.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 mb-4">
+                <div class="card" style="border-bottom: 5px solid#FEA116;">
+                    <div class="card-body">
+                        <img src="./img/gym.png" alt="">
+                        <h5 class="card-title">GYM & Yoga</h5>
+                        <p class="card-text">Erat ipsum justo amet duo et elitr dolor, est duo
+                            duo eos lorem sed diam stet diam sed stet
+                            lorem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class='mt-3' style="text-align: center;">
+            <h1 style="font-size: 16px;color: #FEA116;">Testimonial</h1>
+            <h1 style="font-size: 40px;">Our Clients<span style="color:#FEA116;"> FEEDBACK </span> </h1>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active text-center">
+                <div class="mt-5">
+                    <div class="carouselimg2">
+                        <img src="/img/clint-2.png" alt="">
+                    </div>
+                    <div class="carousel-text2">
+                        <h4 class="fw-bold text-capitalize mt-2">Jethalal</h4>
+                        <h5 class="mt-2">Mechanical Engineer</h5>
+                    </div>
+                    <div class="box-2 mt-3">
+                        <img class="justify-content-left d-grid " src="./img/d-coats.png" alt="">
+                        <div class="star">
+                            <i class="bi bi-star-fill fs-5 mx-1 text-warning"></i>
+                            <i class="bi bi-star-fill fs-5 mx-1 text-warning"></i>
+                            <i class="bi bi-star-fill fs-5 mx-1 text-warning"></i>
+                            <i class="bi bi-star-fill fs-5 mx-1 text-warning"></i>
+                            <i class="bi bi-star-fill fs-5 mx-1 text-warning"></i>
+                        </div>
+                        <p class="p-3 fs-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, debitis
+                            ex cum
+                            id dolor, quisquam amet rem autem enim repellendus sint illum. Veritatis harum ad
+                            dignissimos, asperiores, eius reiciendis molestias officia dolorum obcaecati qui suscipit
+                            nam corrupti quis, repellat omnis!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item text-center">
+                <div class="mt-5">
+                    <div class="carouselimg2">
+                        <img src="/img/clint-2.png" alt="">
+                    </div>
+                    <div class="carousel-text2">
+                        <h4 class="fw-bold text-capitalize mt-2">Priyanshu</h4>
+                        <h5 class="mt-2">Front-end devloper</h5>
+                    </div>
+                    <div class="box-2 mt-3">
+                        <img class="justify-content-left d-grid " src="./img/d-coats.png" alt="">
+                        <div class="star">
+                            <i class="bi bi-star-fill fs-5 mx-1 text-warning"></i>
+                            <i class="bi bi-star-fill fs-5 mx-1 text-warning"></i>
+                            <i class="bi bi-star-fill fs-5 mx-1 text-warning"></i>
+                            <i class="bi bi-star-fill fs-5 mx-1 text-warning"></i>
+                            <i class="bi bi-star-fill fs-5 mx-1 text-warning"></i>
+                        </div>
+                        <p class="p-3 fs-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, debitis
+                            ex cum
+                            id dolor, quisquam amet rem autem enim repellendus sint illum. Veritatis harum ad
+                            dignissimos, asperiores, eius reiciendis molestias officia dolorum obcaecati qui suscipit
+                            nam corrupti quis, repellat omnis!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item text-center">
+                <div class="mt-5">
+                    <div class="carouselimg2">
+                        <img src="/img/clint-2.png" alt="">
+                    </div>
+                    <div class="carousel-text2">
+                        <h4 class="fw-bold text-capitalize mt-2">Devam</h4>
+                        <h5 class="mt-2">Businessmen</h5>
+                    </div>
+                    <div class="box-2 mt-3">
+                        <img class="justify-content-left d-grid " src="./img/d-coats.png" alt="">
+                        <div class="star">
+                            <i class="bi bi-star-fill fs-5 mx-1 text-warning"></i>
+                            <i class="bi bi-star-fill fs-5 mx-1 text-warning"></i>
+                            <i class="bi bi-star-fill fs-5 mx-1 text-warning"></i>
+                            <i class="bi bi-star-fill fs-5 mx-1 text-warning"></i>
+                            <i class="bi bi-star-fill fs-5 mx-1 text-warning"></i>
+                        </div>
+                        <p class="p-3 fs-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, debitis
+                            ex cum
+                            id dolor, quisquam amet rem autem enim repellendus sint illum. Veritatis harum ad
+                            dignissimos, asperiores, eius reiciendis molestias officia dolorum obcaecati qui suscipit
+                            nam corrupti quis, repellat omnis!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="our-team mt-5" id="staff">
+        <div class="container-fluid mt-5">
+            <div class='mt-3' style="text-align: center;">
+                <h1 style="font-size: 16px;color: #FEA116;">Our Team</h1>
+                <h1 style="font-size: 40px;">Explore Our<span style="color:#FEA116;"> STAFFS </span> </h1>
+            </div>
+            <div class="our-team-section">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="main-img d-grid justify-content-center">
+                                <img src="img/team-1.jpg.png" alt="">
+                            </div>
+                            <div class="logo d-flex justify-content-center gap-2 text-center">
+                                <a href="#" class="fa fa-facebook"
+                                    style="width: 30px; height: 30px; line-height: 30px; color: #ffffff; background-color: #FEA116;"></a>
+                                <a href="#" class="fa fa-twitter"
+                                    style=" width: 30px; height: 30px; line-height: 30px; color: #fff; background-color: #FEA116;"></a>
+                                <a href="#" class="fa fa-instagram"
+                                    style=" width: 30px; height: 30px; line-height: 30px; color: #fff; background-color: #FEA116;"></a>
+                            </div>
+                            <div class="team-name text-center">
+                                <h3 class="text-capitalize fw-bold">Abhi Sabhadiya</h3>
+                                <p>Shaif</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="main-img d-grid justify-content-center">
+                                <img src="img/team-2.jpg.png" alt="">
+                            </div>
+                            <div class="logo d-flex justify-content-center gap-2 text-center">
+                                <a href="#" class="fa fa-facebook"
+                                    style="width: 30px; height: 30px; line-height: 30px; color: #ffffff; background-color: #FEA116;"></a>
+                                <a href="#" class="fa fa-twitter"
+                                    style=" width: 30px; height: 30px; line-height: 30px; color: #fff; background-color: #FEA116;"></a>
+                                <a href="#" class="fa fa-instagram"
+                                    style=" width: 30px; height: 30px; line-height: 30px; color: #fff; background-color: #FEA116;"></a>
+                            </div>
+                            <div class="team-name text-center">
+                                <h3 class="text-capitalize fw-bold">Bharat Vaghani</h3>
+                                <p>Restaurant manager</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="main-img d-grid justify-content-center">
+                                <img src="img/team-3.jpg.png" alt="">
+                            </div>
+                            <div class="logo d-flex justify-content-center gap-2 text-center">
+                                <a href="#" class="fa fa-facebook"
+                                    style="width: 30px; height: 30px; line-height: 30px; color: #ffffff; background-color: #FEA116;"></a>
+                                <a href="#" class="fa fa-twitter"
+                                    style=" width: 30px; height: 30px; line-height: 30px; color: #fff; background-color: #FEA116;"></a>
+                                <a href="#" class="fa fa-instagram"
+                                    style=" width: 30px; height: 30px; line-height: 30px; color: #fff; background-color: #FEA116;"></a>
+                            </div>
+                            <div class="team-name text-center">
+                                <h3 class="text-capitalize fw-bold">Jenil gangani</h3>
+                                <p>Counter manager</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="main-img d-grid justify-content-center">
+                                <img src="img/team-4.jpg.png" alt="">
+                            </div>
+                            <div class="logo d-flex justify-content-center gap-2 text-center">
+                                <a href="#" class="fa fa-facebook"
+                                    style="width: 30px; height: 30px; line-height: 30px; color: #ffffff; background-color: #FEA116;"></a>
+                                <a href="#" class="fa fa-twitter"
+                                    style=" width: 30px; height: 30px; line-height: 30px; color: #fff; background-color: #FEA116;"></a>
+                                <a href="#" class="fa fa-instagram"
+                                    style=" width: 30px; height: 30px; line-height: 30px; color: #fff; background-color: #FEA116;"></a>
+                            </div>
+                            <div class="team-name text-center">
+                                <h3 class="text-capitalize fw-bold">Anant Kakdiya</h3>
+                                <p>Product manager</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="blog-section">
+        <div class="container-fluid">
+            <div class='mt-3' style="text-align: center;">
+                <h1 style="font-size: 16px;color: #FEA116;">Blog Post</h1>
+                <h1 style="font-size: 40px;">Latest From<span style="color:#FEA116;"> BLOG </span> </h1>
+            </div>
+            <div class="blog-row">
+                <div class="containner-fluid mt-5">
+                    <div class="row p-2 justify-content-center">
+                        <div class="col-sm-12 col-md-9 col-lg-6">
+                            <div class="row">
+                                <div class="blog-card-img col-sm-5 col-md-5 col-lg-5">
+                                    <img src="img/blog-1.jpg.png" alt="">
+                                </div>
+                                <div class="col-sm-7 col-md-7 col-lg-7 p-3">
+                                    <div class="webdesign-btn">
+                                        <button class="text-light border-0 px-2 py-1 fs-6">web design</button>
+                                    </div>
+                                    <div class="about d-flex gap-3 pt-4">
+                                        <div class="profile-img d-flex gap-2 align-items-center border-end">
+                                            <img src="img/profile.png" alt="">
+                                            <div class="profile-text">
+                                                <h6 class="mb-0 px-2 text-capitalize">Prince gangani</h6>
+                                            </div>
+                                        </div>
+                                        <div class="calender-img d-flex gap-2 align-items-center">
+                                            <img src="img/calender.png" alt="">
+                                            <div class="calender-text">
+                                                <h6 class="mb-0 px-1 text-capitalize">01 feb 2024</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-text border-bottom">
+                                        <p class="fs-5 fw-bold text-capitalize pt-4">Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit. Nostrum, unde.</p>
+                                    </div>
+                                    <div class="read">
+                                        <div style="height: 95px;"
+                                            class="read-btn d-flex align-items-center justify-content-between">
+                                            <button class="text-light border-0 fs-5 px-2 py-1 text-capitalize">read
+                                                more</button>
+                                            <div class="read-icon d-flex gap-2">
+                                                <h6 class="text-capitalize">share:</h6>
+                                                <a href="#" class="fa fa-facebook" style="color: #fea116;"></a>
+                                                <a href="#" class="fa fa-twitter" style="color: #fea116;"></a>
+                                                <a href="#" class="fa fa-linkedin" style="color: #fea116;"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-9 col-lg-6">
+                            <div class="row">
+                                <div class="blog-card-img col-sm-5 col-md-5 col-lg-5">
+                                    <img src="img/blog-1.jpg.png" alt="">
+                                </div>
+                                <div class="col-sm-7 col-md-7 col-lg-7 p-3">
+                                    <div class="webdesign-btn">
+                                        <button class="text-light border-0 px-2 py-1 fs-6">web design</button>
+                                    </div>
+                                    <div class="about d-flex gap-3 pt-4">
+                                        <div class="profile-img d-flex gap-2 align-items-center border-end">
+                                            <img src="img/profile.png" alt="">
+                                            <div class="profile-text">
+                                                <h6 class="mb-0 px-2 text-capitalize">Juhil Desai</h6>
+                                            </div>
+                                        </div>
+                                        <div class="calender-img d-flex gap-2 align-items-center">
+                                            <img src="img/calender.png" alt="">
+                                            <div class="calender-text">
+                                                <h6 class="mb-0 px-1 text-capitalize">18 feb 2024</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-text border-bottom">
+                                        <p class="fs-5 fw-bold text-capitalize pt-4">Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit. Nostrum, unde.</p>
+                                    </div>
+                                    <div class="read">
+                                        <div style="height: 95px;"
+                                            class="read-btn d-flex align-items-center justify-content-between">
+                                            <button class="text-light border-0 fs-5 px-2 py-1 text-capitalize">read
+                                                more</button>
+                                            <div class="read-icon d-flex gap-2">
+                                                <h6 class="text-capitalize">share:</h6>
+                                                <a href="#" class="fa fa-facebook" style="color: #fea116;"></a>
+                                                <a href="#" class="fa fa-twitter" style="color: #fea116;"></a>
+                                                <a href="#" class="fa fa-linkedin" style="color: #fea116;"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    <footer>
+        <div class="container-fluid" id="footer">
+            <div class="row">
+                <div class="col-md-3 mt-5 footer-section">
+                    <div class="container" style="background-color: #FEA116;color: #fff; text-align: center;">
+                        <h1>MY HOTEL </h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nihil
+                            eius reprehenderit sit nesciunt est maiores </p>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-5 footer-section">
+                    <h5 style="color: #FEA116;">CONTECT</h5>
+                    <div class="d-flex">
+                        <i class="fi fi-ss-marker" style="color: #f4f5f5;height: 20px;"></i>
+                        <h6 class="ms-2">123 street,new york,usa</h6>
+                    </div>
+                    <div class="d-flex mt-2">
+                        <i class="fi fi-sr-phone-call" style="color: #fff;height: 20px;"></i>
+                        <h6 class="ms-2">+ 012 345 6789</h6>
+                    </div>
+                    <div class="d-flex mt-2">
+                        <i class="fi fi-sr-envelope"></i>
+                        <h6 class="ms-2">myhotel.com</h6>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-5 footer-section">
+                    <h5 style="color: #FEA116;">COMPANY</h5>
+                    <div class="about mt-3 d-flex align-items-center gap-2">
+
+                        <i class="fi fi-rr-arrow-small-right mt-2" style="color: #fafcff;"></i> <a
+                            style="text-decoration: none; color: #fff;" href="#about" class="my-0 text-uppercase">about-us</a>
+                    </div>
+                    <div class="contect-us mt-3 d-flex align-items-center gap-2">
+                        <i class="fi fi-rr-arrow-small-right mt-2" style="color: #fafcff;"></i> <a
+                            style="text-decoration: none; color: #fff;" href=""
+                            class="my-0 text-uppercase">contect-us</a>
+                    </div>
+                    <div class="privecy mt-3 d-flex align-items-center gap-2">
+                        <i class="fi fi-rr-arrow-small-right mt-2" style="color: #fafcff;"></i> <a
+                            style="text-decoration: none; color: #fff;" href="room.html"
+                            class="my-0 text-uppercase">Our Rooms</a>
+                    </div>
+                    <div class="terms mt-3 d-flex align-items-center gap-2">
+                        <i class="fi fi-rr-arrow-small-right mt-2" style="color: #fafcff;"></i> <a
+                            style="text-decoration: none; color: #fff;" href="staff.html" class="my-0 text-uppercase">Staff</a>
+                    </div>
+                    <div class="support mt-3 d-flex align-items-center gap-2">
+                        <i class="fi fi-rr-arrow-small-right mt-2" style="color: #fafcff;"></i> <a
+                            style="text-decoration: none; color: #fff;" href="gallery.html" class="my-0 text-uppercase">Gallery</a>
+                    </div>
+
+                </div>
+                <div class="col-md-3 mt-5 footer-section">
+                    <h5 style="color: #FEA116;">SERVICES</h5>
+                    <div class="services-item">
+                        <div class="food d-flex align-items-center gap-2 mt-3">
+
+                            <i class="fi fi-rr-arrow-small-right mt-2" style="color: #fafcff;"></i>
+                            <h6 class="my-0">food &#38; restaurent</h6>
+                        </div>
+                        <div class="spa d-flex align-items-center gap-2 mt-3">
+
+                            <i class="fi fi-rr-arrow-small-right mt-2" style="color: #fafcff;"></i>
+                            <h6 class="my-0">spa &#38; fitness</h6>
+                        </div>
+                        <div class="gaming d-flex align-items-center gap-2 mt-3">
+
+                            <i class="fi fi-rr-arrow-small-right mt-2" style="color: #fafcff;"></i>
+                            <h6 class="my-0">sport &#38; gaming</h6>
+                        </div>
+                        <div class="event d-flex align-items-center gap-2 mt-3">
+                            <i class="fi fi-rr-arrow-small-right mt-2" style="color: #fafcff;"></i>
+                            <h6 class="my-0">event &#38; party</h6>
+                        </div>
+                        <div class="yoga d-flex align-items-center gap-2 mt-3">
+                            <i class="fi fi-rr-arrow-small-right mt-2" style="color: #fafcff;"></i>
+                            <h6 class="my-0">gym &#38; yoga</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="copy-right-text" style="text-align: center;">
+                        <h6>&#169; <span class="text-decoration-underline">hotel blue whele</span>, all right reserved .
+                            designed by
+                            <span class="text-decoration-underline">tarun vaghani </span>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
