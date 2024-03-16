@@ -19,6 +19,9 @@
     .icoon{
         width: 310px !important;
     }
+    #bt{
+        margin-left: 20px !important;
+    }
 }
 
 body,html {
