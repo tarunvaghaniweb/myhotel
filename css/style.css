@@ -14,6 +14,12 @@
         height: 990px !important;
     }
 }
+@media only screen and (max-width:390px) {
+
+    .icoon{
+        width: 310px !important;
+    }
+}
 
 body,html {
     width: 100%;
