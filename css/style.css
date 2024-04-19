@@ -11,7 +11,7 @@ body,html {
         height: 990px !important;
     }
 }
-@media only screen and (max-width:395px) {
+@media only screen and (max-width:394px) {
     .icoon{
         width: 180px !important;
     }
