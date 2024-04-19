@@ -27,7 +27,7 @@ body,html {
 @media only screen and (max-width:390px) {
 
     .icoon{
-        width: 310px !important;
+        width: 275px !important;
     }
     #bt{
         margin-left: 20px !important;
