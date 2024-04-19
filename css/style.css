@@ -11,13 +11,19 @@ body,html {
         height: 990px !important;
     }
 }
-
+@media only screen and (max-width:395px) {
+    .icoon{
+        width: 180px !important;
+    }
+  
+}
 @media only screen and (max-width:425px) {
 
     #room {
         height: 990px !important;
     }
 }
+
 @media only screen and (max-width:390px) {
 
     .icoon{
